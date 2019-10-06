@@ -13,7 +13,6 @@ variable "windows_dns_prefix" {
 
 variable "admin_password" {
   description = "admin password for Windows VM"
-  default = "${var.windows_pwd}"
 }
 
 module "windowsserver" {
