@@ -21,7 +21,7 @@ module "windowsserver" {
   location            = "${var.location}"
   resource_group_name = "${var.windows_dns_prefix}-rc"
   vm_hostname         = "pwc-ptfe"
-  vm_size             = "Standard_DS2_V2"
+  vm_size             = "Standard_DS1_V2"
   admin_password      = "${var.admin_password}"
   vm_os_simple        = "WindowsServer"
   public_ip_dns       = ["${var.windows_dns_prefix}"]
